@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+
+
+tr:nth-child(odd) {
+  background-color: #5ebbbe;
+}
+
+tr:nth-last-child(-n+3)>td:nth-child(1)::before
+{
+  content: "3";
+}
+tr:nth-last-child(-n+3)>td:nth-child(2)::before
+{
+  content: "Sugar";
+}
+tr:nth-last-child(n)>td:nth-child(3)::before
+{
+  content: "Good";
+}
+tr:nth-last-child(n)>td:nth-child(4)::before
+{
+  
+  content: "200 Bags";
+}
+tr:nth-child(3)>td:nth-child(4)::before{
+  content: "250 Bags";
+}
+
+
+
+th {
+  padding: 12px; 
+  border-style: dotted ;
+  border-color: rgb(162, 160, 13);
+  border-bottom: 0;   
+}
+
+
+td{
+  padding: 12px;
+  border: 2px;
+  border-style: dashed;
+}
+
+#firstTable table {
+  font-size: 20px;
+  font-family: arial;
+  border: 3px solid saddlebrown ;
+  border-collapse: collapse;
+  width: 100%;  
+ 
+}
+
+</style>
+</head>
+<body>
+
+
+  <div id="firstTable">
+<table style=" height: 25em;" >
+ 
+  <tr>
+    <th >Product Id</th>
+    <th>Product Name</th>
+    <th>Product Quality</th>
+    <th>Product Quantity</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Wheat</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Rice</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
